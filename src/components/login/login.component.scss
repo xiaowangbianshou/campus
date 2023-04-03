@@ -1,0 +1,116 @@
+.login-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.login-body {
+    height: 100%;
+    width: 100%;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login-panel {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-logo {
+    width: 280px;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    font-size: 50px;
+    .login-logo-i,
+    .login-logo-huzu {
+        font-family: fantasy;
+    }
+    .login-logo-love {
+        color: red;
+    }
+}
+
+.login-logo::before {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    background: linear-gradient(to right, #4460f1, #c471ed, #f64f59);
+    filter: blur(70px);
+}
+
+.login-form {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    width: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    .login-input-group {
+        justify-items: center;
+        align-items: center;
+        // padding-left: 10px;
+    }
+    .login-form-control {
+        width: 500px;
+        // background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        // box-shadow: 4px 4px 4px #333;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 100px auto auto 100px;
+        height: 335.2px;
+        .login-form-title {
+            font-size: 20px;
+        }
+        .ant-input-affix-wrapper {
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .ant-input-affix-wrapper:focus,
+        .ant-input-affix-wrapper-focused {
+            box-shadow: none;
+        }
+        .login-form-input {
+            font-size: 14px;
+            width: 240px;
+            border: 0;
+            outline: 0;
+            padding: 0 20px;
+            border-radius: 10px;
+            line-height: 34px;
+            background-color: #f2f4ff;
+        }
+        .login-form-submit {
+            align-self: start;
+            width: 256px;
+            height: 34px;
+            margin-top: 10px;
+            background-color: rgb(141, 64, 230);
+            color: #fff;
+            border: none;
+            font-size: 14px;
+        }
+    }
+}
+
+.login-footer {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    &>a {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
